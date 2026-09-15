@@ -1,0 +1,336 @@
+.wrap {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 50;
+}
+
+.button {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--color-white);
+  outline-offset: 3px;
+}
+
+.buttonHiddenWhenOpen {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.icon {
+  position: relative;
+  width: 22px;
+  height: 14px;
+}
+
+.line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--color-white);
+  border-radius: 2px;
+}
+
+.lineTop { top: 0; }
+.lineMid { top: 6px; }
+.lineBot { top: 12px; }
+
+/* Backdrop */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 17, 15, 0.55);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 220ms ease;
+  z-index: 40;
+}
+
+.backdropOpen {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Panel */
+.panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100svh;
+  width: min(86vw, 420px);
+  background: var(--color-secondary);
+  transform: translateX(-100%);
+  transition: transform 320ms ease;
+  z-index: 45;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  font-family: var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+
+.panel {
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.25);
+}
+
+.panelOpen {
+  transform: translateX(0);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 18px 8px;
+}
+
+.close {
+  border: 0;
+  background: transparent;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--color-text);
+}
+
+.close:hover {
+  color: var(--color-primary);
+}
+
+.nav {
+  padding: 18px 18px 18px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 44px;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+  display: block;
+  font-family: var(--font-heading), ui-serif, Georgia, "Times New Roman", Times, serif;
+  text-transform: uppercase;
+}
+
+.link:hover {
+  color: var(--color-primary);
+}
+
+/* Use the same visual style as .link, but as a <button> for dropdown labels */
+.dropdownLabelBtn {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  font-family: var(--font-heading), ui-serif, Georgia, "Times New Roman", Times, serif;
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+  text-transform: uppercase;
+}
+
+.dropdownLabelBtn:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 4px;
+}
+
+.active {
+  color: var(--color-primary);
+}
+
+/* ── Dropdown ── */
+.dropdownWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.dropdownTrigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.chevronBtn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-size: 28px;
+  color: var(--color-text);
+  line-height: 1;
+  padding: 4px 8px;
+  transform: rotate(-90deg);
+  transition: transform 240ms ease;
+  flex-shrink: 0;
+}
+
+.chevronBtn:hover {
+  color: var(--color-primary);
+}
+
+.chevronOpen {
+  transform: rotate(90deg);
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 280ms ease, padding 280ms ease;
+  padding: 0 0 0 32px;
+}
+
+.dropdownOpen {
+  max-height: 300px;
+  padding: 12px 0 4px 32px;
+}
+
+.dropdownLink {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(44, 44, 44, 0.82);
+  transition: color 160ms ease;
+  font-family: var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+
+.dropdownLink:hover {
+  color: var(--color-primary);
+}
+
+.dropdownLinkActive {
+  color: var(--color-primary);
+}
+
+/* ── Social links ── */
+.smallLinks {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.smallLink {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(44, 44, 44, 0.82);
+  font-family: var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+
+.smallLink:hover {
+  color: var(--color-primary);
+}
+
+/* ── Footer ── */
+.footer {
+  margin-top: auto;
+  padding: 18px;
+  border-top: 1px solid rgba(44, 44, 44, 0.10);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footerRow {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 14px;
+  color: rgba(44, 44, 44, 0.86);
+  font-family: var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+
+.footerLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+}
+
+.footerLink:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.iconBubble {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(44, 44, 44, 0.10);
+  flex: 0 0 auto;
+}
+
+@media (max-width: 900px) {
+  .link,
+  .dropdownLabelBtn {
+    font-size: 40px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .panel {
+    width: 100vw;
+  }
+
+  .nav {
+    padding-left: 22px;
+  }
+
+  .dropdown {
+    padding-left: 22px;
+  }
+
+  .dropdownOpen {
+    padding-left: 22px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .link,
+  .dropdownLabelBtn {
+    font-size: 35px;
+  }
+
+  .smallLink {
+    font-size: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panel,
+  .backdrop,
+  .button,
+  .chevronBtn,
+  .dropdown {
+    transition: none;
+  }
+}
