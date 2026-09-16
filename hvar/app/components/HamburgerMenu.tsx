@@ -210,7 +210,7 @@ export default function HamburgerMenu({
                   target="_blank"
                   rel="noopener noreferrer"
               >
-                Fausta Vrančića 1, 21000, Split, Hrvatska
+                Fausta Vrančića 1, 21000, Split
               </a>
             </div>
              <div className={styles.footerRow}>

@@ -6,7 +6,7 @@ export default function FooterSection() {
             <div className={styles.content}>
                 <div className={styles.col}>
                     <h4 className={styles.heading}>OPENING HOURS</h4>
-                    <p className={styles.text}>Tuesday – SUnday</p>
+                    <p className={styles.text}>Tuesday – Sunday</p>
                     <p className={styles.text}>11:00 – 24:00</p>
                     <div className={styles.socials}>
                         <a
@@ -29,7 +29,6 @@ export default function FooterSection() {
                     <h4 className={styles.heading}>LOCATION</h4>
                     <p className={styles.text}>Fausta Vrančića 1</p>
                     <p className={styles.text}>21000, Split</p>
-                    <p className={styles.text}>Hrvatska</p>
                     <p className={styles.text}>021 288 222</p>
                     <p className={styles.text}>099 744 0488</p>
                     <a

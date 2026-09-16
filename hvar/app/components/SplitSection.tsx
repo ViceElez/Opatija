@@ -22,7 +22,7 @@ export default function SplitSection() {
                 </div>
                 <div className={styles.headerRight}>
                     <p className={styles.desc}>
-                        Savor thoughtfully crafted dishes, fresh local ingredients, and carefully selected wines in a relaxed island atmosphere
+                        Savor thoughtfully crafted dishes, fresh local ingredients, and carefully selected wines in a relaxed city atmosphere
                     </p>
                     <Link href="/menu" className={styles.cta}>DISCOVER MORE</Link>
                 </div>

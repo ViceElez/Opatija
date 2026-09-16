@@ -65,7 +65,7 @@ export default function Contact() {
         {[
           {
              title: 'Location',
-             lines: ['Fausta Vrančića 1, 21000, Split', 'Hrvatska'],
+             lines: ['Fausta Vrančića 1, 21000, Split', 'Croatia'],
              action: {
                label: 'View on map',
                href: 'https://www.google.com/maps/place/Restaurant+Opatija/@43.5132554,16.46147,17.77z/data=!4m9!1m2!2m1!1sFausta+Vrančića+1,+21000,+Split,+Hrvatska!3m5!1s0x13355e179a750b6b:0x841aac409d85726d!8m2!3d43.5120579!4d16.4620334!16s%2Fg%2F11cn7rtxj7?entry=ttu&g_ep=EgoyMDI2MDkxMy4wIKXMDSoASAFQAw%3D%3D',

@@ -1,150 +1,40 @@
 import Image from "next/image";
 import styles from "./WinePageStyle.module.css";
 
-// Wines available by the glass, grouped as in the PDF
-const winesByGlass = {
-    kicker: "REFRESH YOUR TASTE BUDS",
-    title: "WINES BY GLASS",
-    image: "/images/wine/wines-by-glass.webp",
-    categories: [
-        {
-            name: "CROATIAN SPARKLING WINE",
-            items: [
-                { name: "Tomac Millenium", price: "8 €" },
-                { name: "Šember Rosé", price: "8 €" },
-            ]
-        },
-        {
-            name: "WHITE WINES",
-            items: [
-                { name: "Carić Bogdanuša", price: "6 €" },
-                { name: "Puhelek Sauvignon Blanc", price: "7 €" },
-                { name: "Coletti Pinot Grigio", price: "7 €" },
-                { name: "Split Hills Pošip", price: "9 €" },
-            ]
-        },
-        {
-            name: "ROSÉ WINES",
-            items: [
-                { name: "Bire Rosé", price: "7 €" },
-            ]
-        },
-        {
-            name: "RED WINES",
-            items: [
-                { name: "Sontacchi Crni Pinot", price: "6 €" },
-                { name: "Grabovac Merlot", price: "7 €" },
-                { name: "Split Hills Plavac Maior Riserva", price: "8 €" },
-            ]
-        },
-        {
-            name: "SWEET WINES",
-            items: [
-                { name: "Tomić Hektorović Prošek", price: "8 €" },
-            ]
-        },
-    ]
-};
-
-// Full wine list grouped exactly as in the PDF, including bottle/glass/measure info
 const wineCategories = [
     {
-        kicker: "OPATIJA WINE LIST",
-        title: "CHAMPAGNE",
+        kicker: "VINSKA KARTA / WINE LIST",
+        title: "PJENUŠAVO VINO / SPARKLING WINE",
         layout: "image-right",
-        image: "/images/wine/champagne.webp",
+        image: "/images/wine/sparkling.webp",
         items: [
-            { name: "Veuve Clicquot Brut", desc: "Bottle — 95 €" },
-            { name: "Ruinart Brut R", desc: "Bottle — 120 €" },
+            { name: "Kos – Anita – Brut", desc: "Bregovita Hrvatska 12,5% · Čaša 6 € · Boca 20 €" },
+            { name: "Sacchetto, \u201cEtt. Nera\u201d Glera – Brut", desc: "Italija, Veneto · Čaša 5 € · Boca 18 €" },
         ]
     },
     {
-        kicker: "OPATIJA WINE LIST",
-        title: "CROATIAN SPARKLING WINE",
+        kicker: "VINSKA KARTA / WINE LIST",
+        title: "BIJELA VINA / WHITE WINE",
         layout: "image-left",
-        image: "/images/wine/croatian-sparkling.webp",
+        image: "/images/wine/white.webp",
         items: [
-            { name: "Tomac Millenium", desc: "Bottle 48 € · Glass 8 € · 0,10 l" },
-            { name: "Šember Rosé", desc: "Bottle 48 € · Glass 8 € · 0,10 l" },
+            { name: "Pavičić – Bogdanuša", desc: "0,75 l" },
+            { name: "Kos – Kraljevina", desc: "Bregovita Hrvatska 12,5% · 0,75 l" },
+            { name: "Kos – Sauvignon Blanc", desc: "Bregovita Hrvatska · 0,75 l" },
+            { name: "Sladić Marko – Debit", desc: "Dalmacija, Šibenik · 0,75 l" },
+            { name: "Smokvica – Pošip", desc: "Južna Hrvatska, otok Korčula · 0,75 l" },
+            { name: "Montiron – Malvazija", desc: "Istra" },
         ]
     },
     {
-        kicker: "OPATIJA WINE LIST",
-        title: "PROSECCO",
+        kicker: "VINSKA KARTA / WINE LIST",
+        title: "CRNA VINA / RED WINE",
         layout: "image-right",
-        image: "/images/wine/prosecco.webp",
+        image: "/images/wine/red.webp",
         items: [
-            { name: "Prosecco Valdobbiadene Villa Sandi Millesimato D.O.C.G.", desc: "Bottle — 38 €" },
-        ]
-    },
-    {
-        kicker: "WINES BY THE GLASS",
-        title: "WHITE WINES",
-        layout: "image-left",
-        image: "/images/wine/white-wines.webp",
-        items: [
-            { name: "Carić Bogdanuša", desc: "Bottle 29 € · Glass 6 € · 0,125 l" },
-            { name: "Puhelek Sauvignon Blanc", desc: "Bottle 34 € · Glass 7 € · 0,125 l" },
-            { name: "Erdoro Blend One", desc: "Bottle — 33 €" },
-            { name: "Coletti Pinot Grigio", desc: "Bottle 35 € · Glass 7 € · 0,125 l" },
-            { name: "Split Hills Pošip", desc: "Bottle 45 € · Glass 9 € · 0,125 l" },
-            { name: "Luka Krajančić Intrada", desc: "Bottle — 48 €" },
-            { name: "Zure Grk", desc: "Bottle — 69 €" },
-            { name: "Knebu Chardonnay", desc: "Bottle — 75 €" },
-        ]
-    },
-    {
-        kicker: "WINES BY THE GLASS",
-        title: "ROSÉ WINES",
-        layout: "image-right",
-        image: "/images/wine/rose-wines.webp",
-        items: [
-            { name: "Bire Rosé", desc: "Bottle 37 € · Glass 7 € · 0,125 l" },
-            { name: "Markus Rosé", desc: "Bottle — 45 €" },
-            { name: "Whispering Angel", desc: "Bottle — 65 €" },
-        ]
-    },
-    {
-        kicker: "WINES BY THE GLASS",
-        title: "RED WINES",
-        layout: "image-left",
-        image: "/images/wine/red-wines.webp",
-        items: [
-            { name: "Sontacchi Crni Pinot", desc: "Bottle 33 € · Glass 6 € · 0,125 l" },
-            { name: "Grabovac Merlot", desc: "Bottle 36 € · Glass 7 € · 0,125 l" },
-            { name: "Split Hills Plavac Maior Riserva", desc: "Bottle 46 € · Glass 8 € · 0,125 l" },
-            { name: "Galić Crno 9", desc: "Bottle — 54 €" },
-            { name: "Bire Plavac Mali", desc: "Bottle — 54 €" },
-            { name: "Grabovac Syrah", desc: "Bottle — 65 €" },
-        ]
-    },
-    {
-        kicker: "OPATIJA WINE LIST",
-        title: "SWEET WINES",
-        layout: "image-right",
-        image: "/images/wine/sweet-wines.webp",
-        items: [
-            { name: "Tomić Hektorović Prošek", desc: "Bottle 72 € · Glass 8 € · 0,075 l" },
-        ]
-    },
-    {
-        kicker: "PODERI LUIGI EINAUDI — PIEDMONT SELECTION",
-        title: "WHITE WINE",
-        layout: "image-left",
-        image: "/images/wine/einaudi-white.webp",
-        items: [
-            { name: "Roero Arneis 2025 \u201cDonna Ida\u201d", desc: "Bottle 42 € · Glass 8 €" },
-        ]
-    },
-    {
-        kicker: "PODERI LUIGI EINAUDI — PIEDMONT SELECTION",
-        title: "RED WINES",
-        layout: "image-right",
-        image: "/images/wine/einaudi-red.webp",
-        items: [
-            { name: "Dogliani 2024 D.O.C.G.", desc: "Bottle 42 € · Glass 8 €" },
-            { name: "Langhe Nebbiolo 2024 D.O.C.", desc: "Bottle — 58 €" },
-            { name: "Barolo D.O.C.G. 2021 \u201cLudo\u201d", desc: "Bottle — 110 €" },
+            { name: "Ego, Fjaka – Babić 2021.", desc: "Kontinentalna Hrvatska, Slavonija" },
+            { name: "Ruža Omiška – Plavac Mali", desc: "Srednja Dalmacija, Omiš" },
+            { name: "Marlais Atento – Plavac Mali", desc: "Pelješac, južna Hrvatska" },
         ]
     },
 ];
@@ -165,41 +55,6 @@ export default function WinePage() {
             </div>
 
             <main className={styles.main}>
-                <section className={styles.byGlass}>
-                    <div className={styles.byGlassHeader}>
-                        <p className={styles.kicker}>{winesByGlass.kicker}</p>
-                        <h2 className={styles.titleLarge}>{winesByGlass.title}</h2>
-                        <div className={styles.divider}>
-                            <span className={styles.dividerIcon}>✦</span>
-                        </div>
-                    </div>
-
-                    <div className={styles.byGlassBody}>
-                        <div className={styles.byGlassImage}>
-                            <Image
-                                src={winesByGlass.image}
-                                alt="Wines by glass"
-                                fill
-                                priority
-                                style={{ objectFit: 'contain' }}
-                            />
-                        </div>
-                        <div className={styles.byGlassCategories}>
-                            {winesByGlass.categories.map((cat, i) => (
-                                <div key={i} className={styles.byGlassCategory}>
-                                    <h3 className={styles.categoryName}>{cat.name}</h3>
-                                    {cat.items.map((item, j) => (
-                                        <p key={j} className={styles.byGlassItem}>
-                                            {item.name}
-                                            <span className={styles.byGlassPrice}> — {item.price}</span>
-                                        </p>
-                                    ))}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
                 {wineCategories.map((cat, i) => (
                     <section key={i} className={styles.category}>
                         <div className={`${styles.categoryBody} ${cat.layout === 'image-right' ? styles.imageRight : styles.imageLeft}`}>
