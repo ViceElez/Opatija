@@ -53,7 +53,6 @@ export default function WinePage() {
                     <h1 className="pageBannerTitle">Wine</h1>
                 </div>
             </div>
-
             <main className={styles.main}>
                 {wineCategories.map((cat, i) => (
                     <section key={i} className={styles.category}>
