@@ -137,7 +137,7 @@ export default function Contact() {
           alignItems: 'stretch',
         }}
       >
-        {[{ src: '/images/home/stolVanka.webp', alt: 'Konoba Table Image' }, { src: '/images/home/akvarij.webp', alt: 'Lobster Aquarium' }].map(
+        {[{ src: '/images/home/img8.webp', alt: 'Konoba Table Image' }, { src: '/images/home/img7.webp', alt: 'Lobster Aquarium' }].map(
           (img) => (
             <div
               key={img.src}
