@@ -20,7 +20,7 @@ const winesByGlass = {
                 { name: "Carić Bogdanuša", price: "6 €" },
                 { name: "Puhelek Sauvignon Blanc", price: "7 €" },
                 { name: "Coletti Pinot Grigio", price: "7 €" },
-                { name: "Hvar Hills Pošip", price: "9 €" },
+                { name: "Split Hills Pošip", price: "9 €" },
             ]
         },
         {
@@ -34,7 +34,7 @@ const winesByGlass = {
             items: [
                 { name: "Sontacchi Crni Pinot", price: "6 €" },
                 { name: "Grabovac Merlot", price: "7 €" },
-                { name: "Hvar Hills Plavac Maior Riserva", price: "8 €" },
+                { name: "Split Hills Plavac Maior Riserva", price: "8 €" },
             ]
         },
         {
@@ -49,7 +49,7 @@ const winesByGlass = {
 // Full wine list grouped exactly as in the PDF, including bottle/glass/measure info
 const wineCategories = [
     {
-        kicker: "ELYSIUM WINE LIST",
+        kicker: "OPATIJA WINE LIST",
         title: "CHAMPAGNE",
         layout: "image-right",
         image: "/images/wine/champagne.webp",
@@ -59,7 +59,7 @@ const wineCategories = [
         ]
     },
     {
-        kicker: "ELYSIUM WINE LIST",
+        kicker: "OPATIJA WINE LIST",
         title: "CROATIAN SPARKLING WINE",
         layout: "image-left",
         image: "/images/wine/croatian-sparkling.webp",
@@ -69,7 +69,7 @@ const wineCategories = [
         ]
     },
     {
-        kicker: "ELYSIUM WINE LIST",
+        kicker: "OPATIJA WINE LIST",
         title: "PROSECCO",
         layout: "image-right",
         image: "/images/wine/prosecco.webp",
@@ -87,7 +87,7 @@ const wineCategories = [
             { name: "Puhelek Sauvignon Blanc", desc: "Bottle 34 € · Glass 7 € · 0,125 l" },
             { name: "Erdoro Blend One", desc: "Bottle — 33 €" },
             { name: "Coletti Pinot Grigio", desc: "Bottle 35 € · Glass 7 € · 0,125 l" },
-            { name: "Hvar Hills Pošip", desc: "Bottle 45 € · Glass 9 € · 0,125 l" },
+            { name: "Split Hills Pošip", desc: "Bottle 45 € · Glass 9 € · 0,125 l" },
             { name: "Luka Krajančić Intrada", desc: "Bottle — 48 €" },
             { name: "Zure Grk", desc: "Bottle — 69 €" },
             { name: "Knebu Chardonnay", desc: "Bottle — 75 €" },
@@ -112,14 +112,14 @@ const wineCategories = [
         items: [
             { name: "Sontacchi Crni Pinot", desc: "Bottle 33 € · Glass 6 € · 0,125 l" },
             { name: "Grabovac Merlot", desc: "Bottle 36 € · Glass 7 € · 0,125 l" },
-            { name: "Hvar Hills Plavac Maior Riserva", desc: "Bottle 46 € · Glass 8 € · 0,125 l" },
+            { name: "Split Hills Plavac Maior Riserva", desc: "Bottle 46 € · Glass 8 € · 0,125 l" },
             { name: "Galić Crno 9", desc: "Bottle — 54 €" },
             { name: "Bire Plavac Mali", desc: "Bottle — 54 €" },
             { name: "Grabovac Syrah", desc: "Bottle — 65 €" },
         ]
     },
     {
-        kicker: "ELYSIUM WINE LIST",
+        kicker: "OPATIJA WINE LIST",
         title: "SWEET WINES",
         layout: "image-right",
         image: "/images/wine/sweet-wines.webp",
@@ -154,8 +154,8 @@ export default function WinePage() {
         <div className={styles.page}>
             <div className="pageBanner pageBanner--wine">
                 <img
-                    src="/images/home/elysiumLogo.webp"
-                    alt="Elysium Logo"
+                    src="/images/logo.png"
+                    alt="Opatija Logo"
                     className="pageBannerLogo"
                 />
                 <div className="pageBannerContent">

@@ -23,7 +23,7 @@ export default function HamburgerMenu({
                                             href: '',
                                             label: 'MENU',
                                             children: [
-                                              { href: '/menu', label: 'ELYSIUM DINNER MENU' },
+                                              { href: '/menu', label: 'OPATIJA DINNER MENU' },
                                               { href: '/wine-list', label: 'WINE LIST' },
                                             ],
                                           },
@@ -197,7 +197,7 @@ export default function HamburgerMenu({
             })}
 
             <div className={styles.smallLinks}>
-              <a className={styles.smallLink} href="https://www.instagram.com/elysium.hvar/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a className={styles.smallLink} href="https://www.instagram.com/restaurant.opatija" target="_blank" rel="noopener noreferrer">Instagram</a>
             </div>
           </nav>
 
@@ -206,21 +206,21 @@ export default function HamburgerMenu({
               <span className={styles.iconBubble}>📍</span>
               <a
                   className={styles.footerLink}
-                  href="https://www.google.com/maps/place/Elysium/@43.1728673,16.4399534,17z/data=!3m1!4b1!4m6!3m5!1s0x13358195cbb60c0f:0x2c68aa5be4b26cc8!8m2!3d43.1728673!4d16.4425283!16s%2Fg%2F11z9q5vmjn?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
+                  href="https://www.google.com/maps/place/Restaurant+Opatija/@43.5132554,16.46147,17.77z/data=!4m9!1m2!2m1!1sFausta+Vrančića+1,+21000,+Split,+Hrvatska!3m5!1s0x13355e179a750b6b:0x841aac409d85726d!8m2!3d43.5120579!4d16.4620334!16s%2Fg%2F11cn7rtxj7?entry=ttu&g_ep=EgoyMDI2MDkxMy4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
               >
-                Marije Maričić 17, 21450, Hvar
+                Fausta Vrančića 1, 21000, Split, Hrvatska
               </a>
             </div>
              <div className={styles.footerRow}>
                <span className={styles.iconBubble}>📞</span>
-               <span>091 727 8484</span>
+               <span>021 288 222</span>
              </div>
-            <div className={styles.footerRow}>
-              <span className={styles.iconBubble}>✉️</span>
-               <span>elysium.hvar@gmail.com</span>
-            </div>
+             <div className={styles.footerRow}>
+               <span className={styles.iconBubble}>📞</span>
+               <span>099 744 0488</span>
+             </div>
           </div>
         </div>
       </>

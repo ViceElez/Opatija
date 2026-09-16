@@ -91,8 +91,8 @@ export default function Menu() {
         <div className={styles.page}>
             <div className="pageBanner pageBanner--menu">
                 <img
-                    src="/images/home/elysiumLogo.webp"
-                    alt="Elysium Logo"
+                    src="/images/logo.png"
+                    alt="Opatija Logo"
                     className="pageBannerLogo"
                 />
                 <div className="pageBannerContent">

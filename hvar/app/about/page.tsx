@@ -5,40 +5,57 @@ export default function About() {
         <div>
             <div className="pageBanner pageBanner--about">
                 <img
-                    src="/images/home/elysiumLogo.webp"
-                    alt="Elysium Logo"
+                    src="/images/logo.png"
+                    alt="Opatija Logo"
                     className="pageBannerLogo"
                 />
                 <div className="pageBannerContent">
-                    <p className="pageBannerKicker">EXPERIENCE HVAR'S HIDDEN GEM</p>
+                    <p className="pageBannerKicker">A TASTE OF DALMATIA IN SPLIT</p>
                     <h1 className="pageBannerTitle">About</h1>
                 </div>
             </div>
 
             <div>
-                <section className="aboutWrap" aria-label="About Konoba Elysium">
+                <section className="aboutWrap" aria-label="About Opatija">
                     <p className="aboutKicker">OUR STORY</p>
-                    <h2 className="aboutTitle">Konoba Elysium</h2>
+                    <h2 className="aboutTitle">Opatija</h2>
 
                     <div className="aboutBody">
                         <p>
-                            Nestled in the heart of Hvar, <strong>Elysium</strong> is more than just a konoba—it's a celebration of island life, Mediterranean flavors, and timeless moments. From the lively town square just steps away to the endless blue of the Adriatic coastline, every visit to <strong>Elysium</strong> is infused with the energy and charm of this unique island.
+                            Located in the heart of Split, <strong>Opatija</strong> is a restaurant
+                            built around good food, open fire and the simple pleasure of gathering
+                            around the table. Our kitchen draws inspiration from the traditions of
+                            Dalmatia, bringing familiar flavours and quality ingredients together in
+                            a warm and welcoming setting.
                         </p>
 
                         <p>
-                            Our philosophy is simple: great food starts with exceptional ingredients. That's why we source fresh, local produce, seafood, and artisan products to craft each dish with care. Every plate tells a story of Hvar's rich culinary traditions, reimagined in a contemporary style that complements our relaxed, welcoming atmosphere.
+                            At the heart of our kitchen is the grill. Meat, fish and seasonal
+                            ingredients are prepared over an open fire, allowing the quality of each
+                            ingredient to speak for itself. The aroma of the fire, the sound of the
+                            grill and the atmosphere of the restaurant are all part of the experience.
                         </p>
 
                         <p>
-                            Whether it's a perfectly grilled catch of the day, a vibrant seasonal salad, or a comforting pasta, each bite is designed to delight the senses. Savor thoughtfully crafted dishes and carefully selected wines in a setting that embodies the laid-back charm of island life.
+                            Weekends at <strong>Opatija</strong> have their own tradition. Our
+                            slow-roasted lamb is prepared with care and served as a special occasion
+                            to bring people together. It is the kind of meal meant to be shared —
+                            around a full table, with good company and plenty of time to enjoy it.
                         </p>
 
                         <p>
-                            Beyond the food, <strong>Elysium</strong> is a place to slow down and savor life. Enjoy a glass of wine in our warm, stone-walled konoba, gather with friends for an evening of laughter, or simply let the relaxed ambiance carry you into the night. Our team is passionate about creating experiences that linger long after the last bite—moments where flavors, atmosphere, and company come together seamlessly.
+                            We believe the best meals do not need to be complicated. They start with
+                            good ingredients, honest cooking and a kitchen that respects tradition.
+                            From the grill to the table, every dish is prepared with attention to
+                            flavour, quality and the character of Dalmatian cuisine.
                         </p>
 
                         <p>
-                            At <strong>Elysium</strong>, dining is not just about nourishment—it's about connection, joy, and discovery. Whether you are a first-time visitor or a returning friend, we invite you to explore the tastes, sights, and spirit of Hvar in every visit. Step inside, unwind, and let us make every meal a memory to cherish.
+                            Whether you are joining us for a relaxed lunch, a weekend gathering or
+                            an evening with friends, <strong>Opatija</strong> is a place to eat well,
+                            slow down and enjoy the moment. In the heart of Split, we invite you to
+                            take a seat, gather around the table and experience our way of doing
+                            things.
                         </p>
                     </div>
                 </section>
@@ -46,3 +63,4 @@ export default function About() {
         </div>
     );
 }
+

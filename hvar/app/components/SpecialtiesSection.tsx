@@ -6,8 +6,8 @@ export default function SpecialtiesSection() {
         <section className={styles.section}>
             <div className={styles.imageWrapper}>
                 <Image
-                    src="/images/home/img2.webp"
-                    alt="Lobster Image"
+                    src="/images/food/img7.webp"
+                    alt="Lunch Image"
                     fill
                     sizes="100vw"
                     priority
@@ -17,26 +17,26 @@ export default function SpecialtiesSection() {
 
             <div className={styles.content}>
                 <h3 className={styles.kicker}>RECOMMENDATIONS</h3>
-                <h2 className={styles.title}>ELYSIUM SPECIALTIES</h2>
+                <h2 className={styles.title}>OPATIJA SPECIALTIES</h2>
                 <div className={styles.item}>
-                    <h4 className={styles.name}>Poor Man&apos;s Lobster</h4>
-                    <p className={styles.desc}>Monkfish steak wrapped in leek / light béarnaise sauce / red grapefruit / light salad</p>
+                    <h4 className={styles.name}>Oborita Riba</h4>
+                    <p className={styles.desc}>Whole fresh fish, oven-roasted the traditional way with potatoes and Dalmatian herbs</p>
                 </div>
                 <div className={styles.item}>
-                    <h4 className={styles.name}>The First Impression</h4>
-                    <p className={styles.desc}>Adriatic tasting selection / shrimp pâté / tuna tartare / beetroot tartare / seafood delicacies</p>
+                    <h4 className={styles.name}>Plata &quot;Opatija&quot; za Dvije Osobe</h4>
+                    <p className={styles.desc}>Our signature meat platter for two, grilled to perfection and served with all the trimmings</p>
                 </div>
                 <div className={styles.item}>
-                    <h4 className={styles.name}>Embered Fish Paccheri</h4>
-                    <p className={styles.desc}>Paccheri / charcoal-finished fish / shellfish reduction / cherry tomatoes</p>
+                    <h4 className={styles.name}>Crni Rižot od Sipe</h4>
+                    <p className={styles.desc}>Adriatic black cuttlefish risotto, slow-cooked in its own ink for deep coastal flavor</p>
                 </div>
                 <div className={styles.item}>
-                    <h4 className={styles.name}>Velvet Veal Roll</h4>
-                    <p className={styles.desc}>Slow-roasted veal roulade / mustard / polenta / marinated red cabbage / rich demi-glace</p>
+                    <h4 className={styles.name}>Škampi</h4>
+                    <p className={styles.desc}>Fresh Adriatic scampi, simply prepared to let the sweetness of the sea shine through</p>
                 </div>
                 <div className={styles.item}>
-                    <h4 className={styles.name}>Contemporary Pašticada</h4>
-                    <p className={styles.desc}>Beef / pašticada sauce / gnocchi or homemade pasta / root vegetables / prunes / pancetta</p>
+                    <h4 className={styles.name}>Biftek na Žaru</h4>
+                    <p className={styles.desc}>Chargrilled beef fillet, tender and smoky, a house favorite among meat lovers</p>
                 </div>
             </div>
         </section>

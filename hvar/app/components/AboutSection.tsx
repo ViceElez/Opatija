@@ -7,17 +7,19 @@ export default function AboutSection() {
             <div className={styles.bgLogo} aria-hidden="true" />
 
             <div className={styles.inner}>
-                <p className={styles.kicker}>ABOUT THE KONOBA</p>
+                <p className={styles.kicker}>ABOUT THE RESTAURANT</p>
 
                 <h2 className={styles.title}>OUR STORY</h2>
 
                 <p className={styles.text}>
-                    A place where the Adriatic sets the rhythm and time slows to the pace of the sea.
-                    Here, daily catch defines the menu, fire and salt shape the flavours, and simplicity is elevated to its
-                    purest form. ELYSIUM is dedicated to the art of fish and seafood — respectful to tradition, guided
-                    by season, and refined through contemporary technique. Every dish is created to honour the
-                    ingredient, the moment, and the experience of dining without compromise.
-                    Sit back, trust the kitchen, and allow the sea to lead the way.
+                    In the heart of Split, our restaurant brings together the flavours, warmth and
+                    traditions of Dalmatia. At the centre of our kitchen is the open fire, where
+                    carefully selected meat, fresh fish and seasonal ingredients are prepared over
+                    the grill. Every weekend, our kitchen takes on a special tradition with
+                    slow-roasted lamb, bringing family and friends together around the table.
+                    We believe that great dining is about more than the food — it is about the
+                    atmosphere, the fire, the people and the moments shared together. A genuine
+                    taste of Dalmatia, served in the heart of Split.
                 </p>
 
                 <Link href="/about" className={styles.cta}>

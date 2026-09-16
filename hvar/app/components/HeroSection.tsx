@@ -16,29 +16,29 @@ type Slide = {
 
 const SLIDES: Slide[] = [
     {
-        src: '/images/home/img.webp',
-        alt: 'Konoba Table',
-        eyebrow: 'EXPERIENCE',
-        title: 'HEART OF\nHVAR',
-        subtitle: 'Hand-selected seafood prepared with\ncenturies of coastal tradition.',
-        cta: 'EXPLORE MENU',
+        src: '/images/food/janjetina.webp',
+        alt: 'Roasted lamb',
+        eyebrow: 'WEEKEND TRADITION',
+        title: 'SUNDAY\nLAMB',
+        subtitle: 'Slow-roasted lamb, prepared with patience\nand served the way Dalmatia intended.',
+        cta: 'DISCOVER OUR SPECIALS',
         ctaHref: '/menu',
     },
     {
-        src: '/images/home/img_1.webp',
-        alt: 'Lobster',
-        eyebrow: 'CATCH OF THE DAY',
-        title: 'FRESH FROM\nTHE ADRIATIC',
-        subtitle: 'Discover a gastronomic experience that\ntransports you to the heart of Hvar.',
-        cta: 'VIEW SEAFOOD',
+        src: '/images/home/kamin.webp',
+        alt: 'Grill and fireplace',
+        eyebrow: 'FROM THE FIRE',
+        title: 'STRAIGHT\nFROM THE GRILL',
+        subtitle: 'The fire is always burning. Fresh meat, fish\nand vegetables, grilled over an open flame.',
+        cta: 'EXPLORE THE MENU',
         ctaHref: '/menu',
     },
     {
-        src: '/images/home/img_2.webp',
-        alt: 'Hvar Riva',
-        eyebrow: 'OUR SETTING',
-        title: 'DINE ON\nHVAR',
-        subtitle: 'Where the heart of Hvar, carved in stone, meets an extraordinary table',
+        src: '/images/food/rizot.webp',
+        alt: 'Traditional Dalmatian dining',
+        eyebrow: 'DALMATIAN TABLE',
+        title: 'GOOD FOOD.\nGOOD COMPANY.',
+        subtitle: 'Traditional flavours, local ingredients and\na table made for sharing.',
         cta: 'RESERVE A TABLE',
         ctaHref: '/contact',
     },
@@ -129,8 +129,8 @@ export default function HeroSection() {
             {/* ── Logo ──────────────────────────────────────────── */}
             <div className={styles.logoWrap}>
                 <Image
-                    src="/images/home/elysiumLogo.webp"
-                    alt="Elysium logo"
+                    src="/images/logo.png"
+                    alt="Opatija logo"
                     width={220}
                     height={110}
                     className={styles.logo}

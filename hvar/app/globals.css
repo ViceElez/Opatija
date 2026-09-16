@@ -141,10 +141,10 @@ a:hover {
 }
 
 .pageBanner--about  {
-  background-image: url("/images/home/stolVanka.webp");
+  background-image: url("/images/home/about.webp");
 
 }
-.pageBanner--menu   { background-image: url("/images/home/img_1.webp"); }
-.pageBanner--wine   { background-image: url("/images/wine/wine-barrel.webp"); }
+.pageBanner--menu   { background-image: url("/images/food/prsut.webp"); }
+.pageBanner--wine   { background-image: url("/images/home/img6.png"); }
 
 

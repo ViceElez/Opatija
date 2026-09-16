@@ -6,11 +6,11 @@ export default function FooterSection() {
             <div className={styles.content}>
                 <div className={styles.col}>
                     <h4 className={styles.heading}>OPENING HOURS</h4>
-                    <p className={styles.text}>Every day</p>
-                    <p className={styles.text}>12:00 — 00:00</p>
+                    <p className={styles.text}>Tuesday – SUnday</p>
+                    <p className={styles.text}>11:00 – 24:00</p>
                     <div className={styles.socials}>
                         <a
-                            href="https://www.instagram.com/elysium.hvar/"
+                            href="https://www.instagram.com/restaurant.opatija"
                             className={styles.socialLink}
                             aria-label="Instagram"
                             target="_blank"
@@ -27,12 +27,13 @@ export default function FooterSection() {
 
                 <div className={styles.col}>
                     <h4 className={styles.heading}>LOCATION</h4>
-                    <p className={styles.text}>Marije Maričić 17</p>
-                    <p className={styles.text}>21450 Hvar</p>
-                    <p className={styles.text}>Croatia</p>
-                    <p className={styles.text}>091 727 8484</p>
+                    <p className={styles.text}>Fausta Vrančića 1</p>
+                    <p className={styles.text}>21000, Split</p>
+                    <p className={styles.text}>Hrvatska</p>
+                    <p className={styles.text}>021 288 222</p>
+                    <p className={styles.text}>099 744 0488</p>
                     <a
-                        href="https://www.google.com/maps/place/Elysium/@43.1728673,16.4399534,17z/data=!3m1!4b1!4m6!3m5!1s0x13358195cbb60c0f:0x2c68aa5be4b26cc8!8m2!3d43.1728673!4d16.4425283!16s%2Fg%2F11z9q5vmjn?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
+                        href="https://www.google.com/maps/place/Restaurant+Opatija/@43.5132554,16.46147,17.77z/data=!4m9!1m2!2m1!1sFausta+Vrančića+1,+21000,+Split,+Hrvatska!3m5!1s0x13355e179a750b6b:0x841aac409d85726d!8m2!3d43.5120579!4d16.4620334!16s%2Fg%2F11cn7rtxj7?entry=ttu&g_ep=EgoyMDI2MDkxMy4wIKXMDSoASAFQAw%3D%3D"
                         className={styles.mapLink}
                         target="_blank"
                         rel="noopener noreferrer"

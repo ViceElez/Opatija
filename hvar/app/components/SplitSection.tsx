@@ -5,9 +5,9 @@ import Link from 'next/link';
 import styles from './styles/Split.module.css';
 
 const baseSlides = [
-    { src: '/images/home/foodImage.webp', alt: 'Hvar Riva Image', aspectClass: 'tall', offset: 'low' },
-    { src: '/images/home/table.webp', alt: 'Lobster Image', aspectClass: 'wide', offset: 'high' },
-    { src: '/images/home/bread.webp', alt: 'Konoba Table Image', aspectClass: 'tall', offset: 'mid' },
+    { src: '/images/home/img4.webp', alt: 'Opatija Interior', aspectClass: 'tall', offset: 'low' },
+    { src: '/images/food/carpaco.webp', alt: 'Carpaccio Image', aspectClass: 'wide', offset: 'high' },
+    { src: '/images/food/mozarella.webp', alt: 'Mozzarella Image', aspectClass: 'tall', offset: 'mid' },
 ];
 
 const slides = baseSlides;

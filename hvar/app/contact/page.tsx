@@ -34,7 +34,7 @@ export default function Contact() {
             lineHeight: 1.05,
           }}
         >
-          FIND US IN HEART OF HVAR
+          FIND US IN THE HEART OF SPLIT
         </h1>
         <p
           style={{
@@ -47,7 +47,7 @@ export default function Contact() {
             fontFamily: 'var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif',
           }}
         >
-            For reservations, events, or special requests, feel free to contact us by phone or email. Located in the heart of Hvar, Elysium offers an unforgettable dining experience with stunning sunset views.
+            For reservations, events, or special requests, feel free to contact us by phone. Located in the heart of Split, Opatija offers an unforgettable dining experience with stunning Adriatic views.
         </p>
       </section>
 
@@ -63,23 +63,18 @@ export default function Contact() {
         }}
       >
         {[
-           {
+          {
              title: 'Location',
-             lines: ['Marije Maričić 17, 21450, Hvar', 'Croatia'],
+             lines: ['Fausta Vrančića 1, 21000, Split', 'Hrvatska'],
              action: {
                label: 'View on map',
-               href: 'https://www.google.com/maps/place/Elysium/@43.1728673,16.4399534,17z/data=!3m1!4b1!4m6!3m5!1s0x13358195cbb60c0f:0x2c68aa5be4b26cc8!8m2!3d43.1728673!4d16.4425283!16s%2Fg%2F11z9q5vmjn?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D',
+               href: 'https://www.google.com/maps/place/Restaurant+Opatija/@43.5132554,16.46147,17.77z/data=!4m9!1m2!2m1!1sFausta+Vrančića+1,+21000,+Split,+Hrvatska!3m5!1s0x13355e179a750b6b:0x841aac409d85726d!8m2!3d43.5120579!4d16.4620334!16s%2Fg%2F11cn7rtxj7?entry=ttu&g_ep=EgoyMDI2MDkxMy4wIKXMDSoASAFQAw%3D%3D',
              },
            },
            {
              title: 'Phone',
-             lines: ['091 727 8484'],
-             action: { label: 'Call now', href: 'tel:0917278484' },
-           },
-           {
-             title: 'Email',
-             lines: ['elysium.hvar@gmail.com'],
-             action: { label: 'Send email', href: 'mailto:elysium.hvar@gmail.com' },
+             lines: ['021 288 222', '099 744 0488'],
+             action: { label: 'Call now', href: 'tel:021288222' },
            },
          ].map((card) => (
           <div

@@ -14,7 +14,7 @@
     position: absolute;
     inset: 0;
 
-    background-image: url('/images/home/elysiumLogo.webp');
+    background-image: url('/images/blackLogo.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: clamp(340px, 55%, 680px) auto;
