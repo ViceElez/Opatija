@@ -47,7 +47,7 @@ export default function Contact() {
             fontFamily: 'var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif',
           }}
         >
-            For reservations, events, or special requests, feel free to contact us by phone. Located in the heart of Split, Opatija offers an unforgettable dining experience with stunning Adriatic views.
+            For reservations, events, or special requests, feel free to contact us by phone. Located in the heart of Split, Opatija offers an unforgettable dining experience with stunning views.
         </p>
       </section>
 
