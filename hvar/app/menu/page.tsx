@@ -9,7 +9,7 @@ const menuSections = [
             { name: "Selekcija dalmatinskih sireva (100g)", price: "8,00 €", desc: "Selection of Dalmatian Cheeses (100 g)", badge: "" },
             { name: "Salata od hobotnice", price: "15,00 €", desc: "Octopus Salad", badge: "" },
             { name: "Pašteta od tune", price: "8,00 €", desc: "Tuna Pâté", badge: "" },
-            { name: "Pohani sir", price: "", desc: "Breaded Cheese", badge: "" },
+            { name: "Pohani sir", price: "8,00 €", desc: "Breaded Cheese", badge: "" },
         ]
     },
     {
@@ -58,10 +58,10 @@ const menuSections = [
             { name: "Bečki odrezak", price: "16,00 €", desc: "Wiener Schnitzel", badge: "" },
             { name: "Plata \u201cOpatija\u201d za dvije osobe", price: "50,00 €", desc: "\u201cOpatija\u201d Platter for Two", badge: "" },
             { name: "Cordon bleu", price: "16,00 €", desc: "Cordon Bleu", badge: "" },
-            { name: "Teleći kotlet", price: "24,00 €", desc: "Veal Cutlet", badge: "" },
-            { name: "Ramstek na žaru", price: "28,00 €", desc: "Grilled Rump Steak", badge: "" },
-            { name: "Punjeni ramstek", price: "29,00 €", desc: "Stuffed Rump Steak", badge: "" },
-            { name: "Biftek na žaru", price: "", desc: "Grilled Beef Tenderloin Steak", badge: "" },
+            { name: "Teleći kotlet", price: "16,00 €", desc: "Veal Cutlet", badge: "" },
+            { name: "Ramstek na žaru", price: "24,00 €", desc: "Grilled Rump Steak", badge: "" },
+            { name: "Punjeni ramstek", price: "28,00 €", desc: "Stuffed Rump Steak", badge: "" },
+            { name: "Biftek na žaru", price: "29,00 €", desc: "Grilled Beef Tenderloin Steak", badge: "" },
         ]
     },
     {
@@ -139,7 +139,7 @@ export default function Menu() {
                                 <div key={j} className={styles.item}>
                                     <div className={styles.itemHeader}>
                                         <div className={styles.nameRow}>
-                                            <h3 className={styles.name}>{item.name}</h3>    
+                                            <h3 className={styles.name}>{item.name}</h3>
                                             {item.badge && (
                                                 <span className={styles.badge}>{item.badge}</span>
                                             )}
